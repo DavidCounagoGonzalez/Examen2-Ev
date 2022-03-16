@@ -6,8 +6,12 @@ import discord4j.core.object.entity.channel.MessageChannel;
 
 public class Main {
     public static void main (final String[]args ){
+        //Para conseguir el token debemos iniciar sesión en la página de desarrolladores de Discord
+        // y crear una nueva aplicación y desde la opción bot podemos añadir el nuestro y obtener su token.
+
         //Se registra el token  para poder usarse en el login en Discord
-        final String token =args[0];
+
+        String token = "OTUzNjMyOTk0NzgwOTA1NDcz.YjHZ7w.AYIdb1tgBD2LiOllGUfchPohhxw";
         final DiscordClient cliente = DiscordClient.create(token);
         final GatewayDiscordClient puerto = cliente.login().block();
             //Se crea una clase y se implementa al bot.
